@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(153, 0, 255), rgb(68, 0, 255));
+            flex-direction: column;
+        }
+
+        img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+            
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            padding: 30px;
+            height: 450px;
+            width: 400px;
+            gap: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 5px 4px rgba(24, 26, 79, 0.203);
+        }
+
+        .judul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        h1 {
+            color: blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        hr {
+            background-color: blue;
+            height: 3px;
+            width: 80%;
+        }
+
+        .input {
+     
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 2px;
+        }
+
+        .input input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .input input:hover {
+            box-shadow: 0 0 8px 2px rgb(76, 0, 255);
+            transition: .3s;
+        }
+
+        .check {
+            display: flex;
+            gap: 10px;
+        }
+        
+        label {
+            cursor: pointer;
+        }
+
+        button {
+            background: linear-gradient(to right, rgb(153, 0, 255), rgb(68, 0, 255));
+            color: white;
+            font-size: 100%;
+            width: 100%;
+            padding: 20px;
+            margin-top: 15px;
+            font-weight: 900;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.03);
+            background: linear-gradient(to right, rgb(186, 83, 255), rgb(124, 83, 237));
+            transition: 0.3s;
+        }
+
+        .regist {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        a {
+            color: rgb(255, 149, 0);
+        }
+    </style>
+</head>
+<body>
+    <img src="ttg.png" width="100px">
+        <form action="">
+            <div class="judul">
+            <h1>Welcome Back!</h1>
+            <hr>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Email or Username" required>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+            </div>
+            <button>LOGIN</button>
+            <div class="regist">
+                Don't have an account?
+                <a href="">Register here</a>
+            </div>
+        </form>
+</body>
+</html>

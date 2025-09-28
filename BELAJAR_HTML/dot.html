@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(190, 190, 190);
+        }
+        .box1 {
+            background-color: white;
+            width: 400px;
+            height: 300px;
+        }
+
+        .box2 {
+            background-color: red;
+            width: 400px;
+            height: 300px;
+        }
+
+        .secondbox {
+            width: 400px;
+            height: 200px;
+            text-align: center;
+            background-color: aqua;
+            padding: 20px;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="secondbox">
+                BOX 1
+            </div>
+        </div>
+        <div class="box2">
+            <div class="secondbox">
+                BOX 2
+            </div>
+        </div>
+    </div>
+</body>
+</html>

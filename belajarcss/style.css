@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    width: 60%;
+}
+
+.text1 {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 2px rgb(150, 150, 150);
+}
+
+.text2 {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 2px rgb(150, 150, 150);
+}
+
+.text3 {
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 5px 2px rgb(150, 150, 150);
+}
+
+.text1:hover {
+    background-color: rgb(255, 239, 11);
+    transform: scale(1.05);
+    box-shadow: 2px 4px 5px 2px rgb(255, 243, 71);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text2:hover {
+    background-color: rgb(153, 0, 255);
+    transform: scale(1.05);
+    box-shadow: 2px 4px 5px 2px rgb(153, 10, 255);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text3:hover {
+    background-color: rgb(255, 0, 238);
+    transform: scale(1.05);
+    box-shadow: 2px 4px 5px 2px rgb(255, 67, 252);
+    transition: 0.3s;
+    cursor: pointer;
+}

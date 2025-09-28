@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talent Group ID</title>
+  <style>
+    :root {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #7d00f1, #1900ff);
+      font-family: sans-serif;
+    }
+
+    .img-wrapper img {
+      width: 5rem;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      padding: 3rem;
+      box-shadow: 0 -2px 1rem rgba(19, 0, 95, 0.3);
+      border-radius: 1.25rem;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 60%;
+      max-width: 500px;
+    }
+
+    h1 {
+      background: linear-gradient(to right, #7d00f1, #1900ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.25rem;
+      font-size: 2rem;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: rgb(128, 0, 255);
+      margin-bottom: 1rem;
+    }
+
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+    }
+
+    .input-box input {
+      background-color: #f3f3f3;
+      padding: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .input-box input:hover {
+      box-shadow: 0 0 0.3rem #7d00f1;
+      transition: 0.2s;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    button {
+      padding: 1rem;
+      margin-top: 1rem;
+      width: 100%;
+      border: none;
+      color: white;
+      border-radius: 1rem;
+      background: linear-gradient(to right, #7d00f1, #1900ff);
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #ac5af9, #5e4dff);
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+
+    .register {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+    }
+
+    .register a {
+      color: #ed952d;
+    }
+
+    form {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="img-wrapper">
+    <img src="ttg.png" alt="tg" />
+  </div>
+
+  <div class="form-container">
+    <form action="" method="post">
+      <h1>Welcome Back!</h1>
+      <hr>
+      <div class="input-box">
+        <input type="text" placeholder="Email or Username" required />
+        <input type="password" placeholder="Password" required />
+      </div>
+
+      <div class="check">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox">Remember me</label>
+      </div>
+
+      <button type="submit">LOG IN</button>
+
+      <div class="register">
+        Don't have an account?
+        <a href="">Register here!</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
